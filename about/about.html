@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Về Tôi</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="../home/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4091c0430f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar-menu" id="sidebarMenu">
+      <h3>
+        <a href="#">VẬT LIỆU XÂY DỰNG<i class="fa-solid fa-VẬT LIỆU XÂY DỰNG-bite"></i></a>
+      </h3>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li>
+          <a href="#" id="productMenuBtn"
+            >Sản phẩm <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="sub-menu" id="productSubMenu">
+            <li><a href="./sanpham/moto.html">Mô Tơ</a></li>
+            <li><a href="./sanpham/maykhoan.html">Máy Khoan</a></li>
+            <li><a href="./sanpham/maycua.html">Máy Cưa</a></li>
+            <li><a href="./sanpham/gach.html">Gạch</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="../cart/cart.html">Giỏ hàng</a></li>
+        <li><a href="../contact/contact.html">Liên hệ</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+        <li><a href="#">Câu hỏi thường gặp</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="top-nav">
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-center">
+          <a href="../index.html"
+            >VẬT LIỆU XÂY DỰNG<i class="fa-solid fa-VẬT LIỆU XÂY DỰNG-bite"></i
+          ></a>
+        </div>
+        <div class="nav-right">
+          <a href="../auth/login.html"><i class="fa-solid fa-user"></i></a>
+          <a href="../cart/cart.html" id="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!--profile-->
+    <div class="container">
+      <div class="profile-card">
+        <div class="img">
+          <img
+            src="./img/Chung.jpg "
+            alt="logo"
+            style="height: 200px; width: 200px"
+          />
+        </div>
+        <div class="caption">
+          <h3>Nguyễn Thọ Chung</h3>
+          <p>Wed Development</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nguyenchung44"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>
+            <a href="../index.html"
+              >VẬT LIỆU XÂY DỰNG<i class="fa-solid fa-VẬT LIỆU XÂY DỰNG-bite"></i
+            ></a>
+          </h3>
+          <p>
+            là một chủ đề cửa hàng được thiết kế cho các doanh nghiệp nhỏ liên
+            quan đến VẬT LIỆU XÂY DỰNG
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="../contact/contact.html">Contact</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://www.facebook.com/nguyenchung44" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <p>ansvloc123@gmail.com</p>
+          <p>(+84) 368 805 794</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed by <strong>chungdepchaisieucapvippromax</strong></p>
+      </div>
+    </footer>
+
+    <script src="../home/main.js"></script>
+    <script src="../cart/cart.js"></script>
+  </body>
+</html>

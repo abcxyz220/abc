@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Máy Cưa Xích</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="../home/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4091c0430f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          function startCountdown(duration) {
+              let timer = duration, minutes, seconds;
+              let countdownElement = document.getElementById("countdown");
+              let countdownInterval = setInterval(function () {
+                  if (!countdownElement) return;
+  
+                  minutes = Math.floor(timer / 60);
+                  seconds = timer % 60;
+  
+                  minutes = minutes < 10 ? "0" + minutes : minutes;
+                  seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+                  countdownElement.textContent = "Flash Sale kết thúc trong: " + minutes + ":" + seconds;
+  
+                  if (--timer < 0) {
+                      clearInterval(countdownInterval);
+                      countdownElement.textContent = "Flash Sale đã kết thúc!";
+                  }
+              }, 1000);
+          }
+          startCountdown(30);
+      });
+  </script>
+  </head>
+  <body>
+    <div class="sidebar-menu" id="sidebarMenu">
+      <h3>
+        <a href="../index.html"
+          >VẬT LIỆU XÂY DỰNG<i class="fa-solid fa-VẬT LIỆU XÂY DỰNG-bite"></i
+        ></a>
+      </h3>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li>
+          <a href="#" id="productMenuBtn"
+            >Sản phẩm <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="sub-menu" id="productSubMenu">
+            <li><a href="./sanpham/moto.html">Mô Tơ</a></li>
+            <li><a href="./sanpham/maykhoan.html">Máy Khoan</a></li>
+            <li><a href="./sanpham/maycua.html">Máy Cưa</a></li>
+            <li><a href="./sanpham/gach.html">Gạch</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="../cart/cart.html">Giỏ hàng</a></li>
+        <li><a href="../contact/contact.html">Liên hệ</a></li>
+        <li><a href="../about/about.html">Về chúng tôi</a></li>
+        <li><a href="#">Câu hỏi thường gặp</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="top-nav">
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-center">
+          <a href="../index.html">
+            VẬT LIỆU XÂY DỰNG<i class="fa-solid fa-VẬT LIỆU XÂY DỰNG-bite"></i
+          ></a>
+        </div>
+        <div class="nav-right">
+          <a href="../auth/login.html"><i class="fa-solid fa-user"></i></a>
+          <a href="../cart/cart.html" id="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="product-detail-container">
+      <div class="product-image">
+        <img
+          src="../home/images/9.png"
+          alt="Bánh ngon"
+          id="mainProductImage"
+        />
+      </div>
+
+      <div class="product-info">
+        <h1 class="product-name">Máy Cưa Xích</h1>
+        <p class="product-summary">
+          Máy Cưa Xích là một công cụ được sử dụng phổ biến trong ngành công nghiệp cơ khí ngày nay. 
+          Tuy nhiên, bạn cần phân biệt hai loại máy khoan này để đảm bảo công việc đạt được hiệu quả cao.
+        </p>
+
+        <div class="highlight-box">
+          <h2>THÔNG SỐ KỸ THUẬT</h2>
+          <ul>
+            <li>Trọng lượng khi không mang lưỡi cắt:	6.3Kg</li>
+            <li>Công suất động cơ:	3.5kW/4.8PS</li>
+            <li>Lưỡi cưa xích:	Bước răng '3/8'</li>
+            <li>Bình cấp dầu cưa xích:	0.42L</li>
+            <li>
+              Quá trình chập bơ truyền thống tạo nên lớp vỏ giòn và kết cấu bông
+              xốp
+            </li>
+          </ul>
+        </div>
+
+        <div class="price-box">
+          <p class="current-price" id="finalPrice" data-baseprice="2816000"></p>
+          <p class="old-price">110$</p>
+        </div>
+
+        <div class="option-box">
+          <h3>Số lượng</h3>
+
+          <div class="size-grid">
+            <label>
+              <input
+                type="radio"
+                name="size"
+                value="S"
+                data-price="0"
+                checked
+              />
+              1 (+0đ)
+            </label>
+            <label>
+              <input type="radio" name="size" value="M" data-price="50000" />
+              2 (+5.500.000đ)
+            </label>
+            <label>
+              <input type="radio" name="size" value="L" data-price="100000" />
+              3 (+8.000.000đ)
+            </label>
+          </div>
+        </div>
+        <section class="countdown">
+          <h2 id="countdown" style="color: red;">Flash Sale kết thúc trong: {{countdown}}</h2>
+      </section>
+        <div class="action-buttons">
+          <a href="#" class="add-to-cart" id="addToCartBtn"
+            >Thêm vào giỏ hàng</a
+          >
+          <a href="../payment/thanhtoan.html" class="buy-now">Đặt hàng</a>
+        </div>
+      </div>
+    </div>
+    <script src="../cart/cart.js"></script>
+    <script src="detail.js"></script>
+    <script src="../home/main.js"></script>
+  </body>
+</html>

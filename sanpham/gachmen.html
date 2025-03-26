@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chi tiết Bánh - Tích chọn Size & Topping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="../home/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4091c0430f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          function startCountdown(duration) {
+              let timer = duration, minutes, seconds;
+              let countdownElement = document.getElementById("countdown");
+              let countdownInterval = setInterval(function () {
+                  if (!countdownElement) return;
+  
+                  minutes = Math.floor(timer / 60);
+                  seconds = timer % 60;
+  
+                  minutes = minutes < 10 ? "0" + minutes : minutes;
+                  seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+                  countdownElement.textContent = "Flash Sale kết thúc trong: " + minutes + ":" + seconds;
+  
+                  if (--timer < 0) {
+                      clearInterval(countdownInterval);
+                      countdownElement.textContent = "Flash Sale đã kết thúc!";
+                  }
+              }, 1000);
+          }
+          startCountdown(30);
+      });
+  </script>
+  </head>
+  <body>
+    <div class="sidebar-menu" id="sidebarMenu">
+      <h3>
+        <a href="../index.html"
+          >VẬT LIỆU XÂY DỰNG<i class="fa-solid fa-VẬT LIỆU XÂY DỰNG-bite"></i
+        ></a>
+      </h3>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li>
+          <a href="#" id="productMenuBtn"
+            >Sản phẩm <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="sub-menu" id="productSubMenu">
+            <li><a href="./sanpham/moto.html">Mô Tơ</a></li>
+            <li><a href="./sanpham/maykhoan.html">Máy Khoan</a></li>
+            <li><a href="./sanpham/maycua.html">Máy Cưa</a></li>
+            <li><a href="./sanpham/gach.html">Gạch</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="../cart/cart.html">Giỏ hàng</a></li>
+        <li><a href="../contact/contact.html">Liên hệ</a></li>
+        <li><a href="../about/about.html">Về chúng tôi</a></li>
+        <li><a href="#">Câu hỏi thường gặp</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="top-nav">
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-center">
+          <a href="../index.html">
+            VẬT LIỆU XÂY DỰNG<i class="fa-solid fa-VẬT LIỆU XÂY DỰNG-bite"></i
+          ></a>
+        </div>
+        <div class="nav-right">
+          <a href="../auth/login.html"><i class="fa-solid fa-user"></i></a>
+          <a href="../cart/cart.html" id="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="product-detail-container">
+      <div class="product-image">
+        <img
+          src="../home/images/13.jpg"
+          alt="Bánh ngon"
+          id="mainProductImage"
+        />
+      </div>
+
+      <div class="product-info">
+        <h1 class="product-name">Gạch Men</h1>
+        <p class="product-summary">
+          Gạch Men Là Gì? Đây là một trong những vật liệu xây dựng phổ biến nhất hiện nay, 
+          được sử dụng rộng rãi trong việc ốp lát sàn nhà, tường nhà, nhà tắm, nhà bếp… Vậy gạch men thực chất là gì, 
+          có những loại nào và ưu nhược điểm của nó ra sao? Bài viết này sẽ cung cấp cho bạn cái 
+          nhìn chi tiết và toàn diện về gạch men.
+        </p>
+
+        <div class="highlight-box">
+          <h2>THÔNG TIN CHI TIẾT</h2>
+          <ul>
+            <li>Độ bền cao: Gạch men có khả năng chịu lực tốt, chống trầy xước và chống mài mòn.</li>
+            <li>Chống thấm nước: Lớp men bảo vệ giúp gạch men chống thấm nước hiệu quả.</li>
+            <li>Dễ dàng vệ sinh: Bề mặt gạch men trơn nhẵn, dễ dàng lau chùi và vệ sinh.</li>
+            <li>Thẩm mỹ cao: Gạch men có đa dạng màu sắc, họa tiết và kích thước, phù hợp với nhiều phong cách kiến trúc.</li>
+            <li>Độ trơn trượt: Một số loại gạch men bóng có thể gây trơn trượt, đặc biệt khi bị ướt.</li>
+            <li>Giá thành có thể cao: So với một số loại gạch khác, giá thành của gạch men có thể cao hơn.</li>
+          </ul>
+        </div>
+
+        <div class="price-box">
+          <p class="current-price" id="finalPrice" data-baseprice="200000"></p>
+          <p class="old-price">10$</p>
+        </div>
+
+        <div class="option-box">
+          <h3>Số lượng</h3>
+
+          <div class="size-grid">
+            <label>
+              <input
+                type="radio"
+                name="size"
+                value="S"
+                data-price="0"
+                checked
+              />
+              10 (+0đ)
+            </label>
+            <label>
+              <input type="radio" name="size" value="M" data-price="50000" />
+              20 (+180.000đ)
+            </label>
+            <label>
+              <input type="radio" name="size" value="L" data-price="100000" />
+              30 (+380.000đ)
+            </label>
+          </div>
+        </div>
+        <section class="countdown">
+          <h2 id="countdown" style="color: red;">Flash Sale kết thúc trong: {{countdown}}</h2>
+      </section>
+        <div class="action-buttons">
+          <a href="#" class="add-to-cart" id="addToCartBtn"
+            >Thêm vào giỏ hàng</a
+          >
+          <a href="../payment/thanhtoan.html" class="buy-now">Đặt hàng</a>
+        </div>
+      </div>
+    </div>
+    <script src="../cart/cart.js"></script>
+    <script src="detail.js"></script>
+    <script src="../home/main.js"></script>
+  </body>
+</html>
